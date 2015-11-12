@@ -31,3 +31,4 @@ bower_components
 # DS store
 .DS_Store
 **.DS_Store
+*.DS_Store
