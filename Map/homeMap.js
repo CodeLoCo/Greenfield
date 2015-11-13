@@ -1,4 +1,20 @@
 $(function(){
+
+	var testimonials = ["<b>'We recently hired a bootcamp grad at SolarCity, best decision we've ever made'</b> - Ilan Musk (CEO Tesla)","<b>'Since 2013, we've constantly recruited bootcamp alum. They create a hardworking atmosphere that makes me love coming to work everyday'</b> - Mark Zuckerberg (CEO Facebook)", "<b>'I met 2 of the most intelligent people I've ever known while at Telegraph Academy...3 months later we have a million-dollar business'</b> - Eric Eng(CEO bullcrap.com)","<b>'My first job was at a company that had already hired alumni of another school, afterwards I was told they put in a good word'</b> - Bosa Saposki (Software Engineer Twitter)"];
+
+	var alpha = ['a','b','c','d'];
+
+// console.log(testimonials.length);
+	$('h1').append(testimonials[Math.floor(Math.random()*testimonials.length)]);
+
+	function() {};unction randomQuote(){
+		$('h1').empty();
+		$('h1').hide().append(testimonials[Math.floor(Math.random()*testimonials.length)]).fadeIn('slow');
+	}
+
+
+	setInterval(randomQuote, 5000);
+
  	$(".mapcontainer").mapael({
 		map : {
 			name : "usa_states",
