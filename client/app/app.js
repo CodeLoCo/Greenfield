@@ -1,15 +1,52 @@
-// angular 
-// angular ui cdn 
-// add BONDFIRE to header 
 
-//[x] landing done 
-//[x] 
-//[] add denpendencies to all js files 
+//add module for overall app
+angular.module('bootCamp', [
+	// add dependencies here
+	'ui.router',
+	'bootCamp.landingPage',
+	'bootCamp.login',
+	'bootCamp.signup',
+	'bootCamp.userHome',
+	'bootCamp.blog',
+	'bootCamp.sandbox'
+])
 
+// config adds states that correspond with templates and controllers for each view
+.config(/*'$stateProvider', '$urlRouterProvider', '$locationProvider',*/ function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-angular.module('bootCamp', [])
-	.controller('camper', function(){
-		this.stuff = newStuff;
-	});
+	// default route goes to index
+	$urlRouterProvider.otherwise('/landingPage');
 
-	newStuff = ['orobosa', 'victor'];
+	// controller logic live in js files next to each html file
+	$stateProvider
+		.state('landingPage', {
+			url: '/landingPage',
+			templateUrl: 'landingPage/landingPage.html',
+			controller: 'LandingPageController'
+		})
+		.state('login', {
+			url: '/login',
+			templateUrl: 'login/login.html',
+			controller: 'LoginController'
+		})
+		.state('signup', {
+			url: '/signup',
+			templateUrl: 'signup/signup.html',
+			controller: 'SignupController'
+		})
+		.state('userHome', {
+			url: '/userHome',
+			templateUrl: 'userHome/userHome.html',
+			controller: 'UserHomeController'
+		})
+		.state('blog', {
+			url: '/blog',
+			templateUrl: 'blog/blog.html',
+			controller: 'BlogController'
+		})
+		.state('sandbox', {
+			url: '/sandbox',
+			templateUrl: 'sandbox/sandbox.html',
+			controller: 'SandboxController'
+		})
+});
