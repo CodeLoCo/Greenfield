@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<html> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
 <script src="packages/jquery.mapael.js" charset="utf-8" ></script>
 <script src="packages/usa_states.js" charset="utf-8" ></script>
-<script src="homeMap.js"></script>
-<link href="homeMap.css" rel="stylesheet" type="text/css" />
-<head>
+<script src="homeMap.js"></script> -->
+<!-- <link href="homeMap.css" rel="stylesheet" type="text/css" />
+ --><!-- <head>
 	<title></title>
 </head>
-<body>
+<body> -->
 <div class="container">
+	<!-- ui-sref references the selected state from the app.js -->
     <div class="myText"><span>This is where the logo photos should go</span></div>
 		<div class="mapcontainer">
 			<div class="map">
@@ -18,7 +19,11 @@
 			</div>
 		</div>
 	<h1></h1>
+
+	<!-- the ui-sref and ui-view make the profile list view show up when clicked -->
+	<div><a ui-sref=".profileList">view profile list</a></div>
+	<div ui-view></div>
 </div>
 
-</body>
+<!-- </body>
 </html>
