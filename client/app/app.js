@@ -1,4 +1,5 @@
-// add module for overall app
+
+//add module for overall app
 angular.module('bootCamp', [
 	// add dependencies here
 	'ui.router',
