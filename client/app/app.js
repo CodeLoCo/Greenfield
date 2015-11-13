@@ -1,4 +1,5 @@
-// add module for overall app
+
+//add module for overall app
 angular.module('bootCamp', [
 	// add dependencies here
 	'ui.router',
@@ -8,7 +9,6 @@ angular.module('bootCamp', [
 	'bootCamp.userHome',
 	'bootCamp.blog',
 	'bootCamp.sandbox'
-
 ])
 
 // config adds states that correspond with templates and controllers for each view
