@@ -9,7 +9,8 @@ angular.module('bootCamp', [
 	'bootCamp.userHome',
 	'bootCamp.blog',
 	'bootCamp.sandbox',
-	'bootCamp.profileList'
+	'bootCamp.profileList',
+	'bootCamp.toyproblems'
 
 ])
 
@@ -55,5 +56,10 @@ angular.module('bootCamp', [
 			url: '/profileList',
 			templateUrl: 'landingPage/profileList/profileList.html',
 			controller: 'ProfileListController'
+		})
+		.state('toyproblems', {
+			url: '/toyproblems',
+			templateUrl: 'toyproblems/toyproblems.html',
+			controller: 'ToyProblemsController'
 		})
 });
