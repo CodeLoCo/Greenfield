@@ -1,4 +1,5 @@
-<form name="">             
+
+<form name="">
   <fieldset class="form-group">
     <input type="text" placeholder="username" title="Email"/>
   </fieldset>
@@ -9,3 +10,8 @@
     <input type="submit" value="Login" />
   </fieldset>
 </form>
+
+<!-- ui-sref references the selected state from the app.js -->
+<div><a ui-sref=".profileList">view profile list</a></div>
+<!-- need another ui-view to make the nested view show -->
+<div ui-view></div>
