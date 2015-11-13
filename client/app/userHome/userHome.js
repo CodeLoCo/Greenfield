@@ -8,3 +8,4 @@ angular.module('bootCamp.userHome', [
 .controller('UserHomeController', function($scope) {
 	console.log("inside UserHomeController---------------");
 })
+
