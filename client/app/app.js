@@ -5,7 +5,9 @@ angular.module('bootCamp', [
 	'bootCamp.landingPage',
 	'bootCamp.login',
 	'bootCamp.signup',
-	'bootCamp.userHome'
+	'bootCamp.userHome',
+	'bootCamp.blog',
+	'bootCamp.sandbox'
 
 ])
 
@@ -36,5 +38,15 @@ angular.module('bootCamp', [
 			url: '/userHome',
 			templateUrl: 'userHome/userHome.html',
 			controller: 'UserHomeController'
+		})
+		.state('blog', {
+			url: '/blog',
+			templateUrl: 'blog/blog.html',
+			controller: 'BlogController'
+		})
+		.state('sandbox', {
+			url: '/sandbox',
+			templateUrl: 'sandbox/sandbox.html',
+			controller: 'SandboxController'
 		})
 });
