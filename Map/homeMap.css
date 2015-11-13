@@ -1,0 +1,37 @@
+body {
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+h1 {
+	color:#0991BD;
+	font-size:25px;
+}
+
+.mapTooltip {
+	position : fixed;
+	background-color : #fff;
+	moz-opacity:0.70;
+	opacity: 0.70;
+	filter:alpha(opacity=70);
+	border-radius:10px;
+	padding : 10px;
+	z-index: 1000;
+	max-width: 200px;
+	display:none;
+	color:#343434;
+}
+
+.container {
+    max-width: 800px;
+    margin:auto;
+}
+
+.myText {
+    /*background-color:#343434;*/
+    height:100px;
+    padding:10px;
+    color:#fff;
+    overflow:auto;
+    margin:10px;
+    text-align: center;
+}
