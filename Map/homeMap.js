@@ -7,7 +7,7 @@ $(function(){
 // console.log(testimonials.length);
 	$('h1').append(testimonials[Math.floor(Math.random()*testimonials.length)]);
 
-	function() {};unction randomQuote(){
+	function randomQuote(){
 		$('h1').empty();
 		$('h1').hide().append(testimonials[Math.floor(Math.random()*testimonials.length)]).fadeIn('slow');
 	}
