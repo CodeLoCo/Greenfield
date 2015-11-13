@@ -8,7 +8,10 @@ angular.module('bootCamp', [
 	'bootCamp.signup',
 	'bootCamp.userHome',
 	'bootCamp.blog',
-	'bootCamp.sandbox'
+	'bootCamp.sandbox',
+	'bootCamp.profileList',
+	'bootCamp.toyproblems'
+
 ])
 
 // config adds states that correspond with templates and controllers for each view
@@ -48,5 +51,15 @@ angular.module('bootCamp', [
 			url: '/sandbox',
 			templateUrl: 'sandbox/sandbox.html',
 			controller: 'SandboxController'
+		})
+		.state('landingPage.profileList', {
+			url: '/profileList',
+			templateUrl: 'landingPage/profileList/profileList.html',
+			controller: 'ProfileListController'
+		})
+		.state('toyproblems', {
+			url: '/toyproblems',
+			templateUrl: 'toyproblems/toyproblems.html',
+			controller: 'ToyProblemsController'
 		})
 });

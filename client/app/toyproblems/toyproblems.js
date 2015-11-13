@@ -1,9 +1,9 @@
 //code will need refactor in future - includes eval, with and nested for loops w no brackets
 
 
-angular.module('bootCamp', [])
+angular.module('bootCamp.toyproblems', [])
 
-.controller('toyProblems', function($scope) {
+.controller('ToyProblemsController', function($scope) {
   $scope.JSoutput = function(a) {
     var str = "[";
     if (typeof(a) == "object" && a.length) {
@@ -91,4 +91,4 @@ angular.module('bootCamp', [])
     }
     return a;
   }
-}) l
+})

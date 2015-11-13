@@ -2,7 +2,7 @@
 
 
 
-<div ng-controller="toyProblems"> 
+<div>
 <!-- onpaste="return false;"
 <style>td {background:white; vertical-align:top; border:1px solid black; padding:2px 10px}
 pre {margin:0}
@@ -37,7 +37,7 @@ and copy it to an editor or email it to yourself.
 </select>
 </td><td>
 <input type="button" value="Run (Ctrl-m)" onclick="JSrun()"> &nbsp; &nbsp;
-<b>Output</b> &nbsp; &nbsp; 
+<b>Output</b> &nbsp; &nbsp;
 Timing: <span id="JStiming">0.001</span> s
 </td></tr>
 <tr><td width="50%" style="padding:1px">
@@ -120,7 +120,7 @@ else block 2                   // optional
 </tr>
 <tr>
 <td><b>while-loop</b></td>
-<td><pre>while (condition) 
+<td><pre>while (condition)
     block
 </pre></td>
 </tr>
@@ -223,8 +223,8 @@ binary_search(3, [1,2,2,2,3,3,4,5,6,7,8]);
 
 bubble_sort = function(a) {
     var t;
-    for (var i = 0; i &lt; a.length-1; i++) 
-        for (var j = 0; j &lt; a.length-i; j++) 
+    for (var i = 0; i &lt; a.length-1; i++)
+        for (var j = 0; j &lt; a.length-i; j++)
             if (a[j] &gt; a[j+1]) {
                 writeln("swap "+a[j]+", "+a[j+1]);
                 t = a[j];
@@ -384,7 +384,7 @@ mult = function(A,B) {
         C[i] = [];
         for (var j = 0; j &lt; B[0].length; j++) {
             C[i][j] = 0;
-            for (var k = 0; k &lt; A[0].length; k++) 
+            for (var k = 0; k &lt; A[0].length; k++)
                 C[i][j] = C[i][j] + A[i][k]*B[k][j];
         }
     }
@@ -399,7 +399,7 @@ mult(A,B)
 
 <div align="center">
 Remember to email peter to thank him.
-<a href="http://www.chapman.edu/~jipsen/">Peter Jipsen</a>, 
+<a href="http://www.chapman.edu/~jipsen/">Peter Jipsen</a>,
 January 2013,
 <a href="http://www.chapman.edu/">Chapman University</a>
 </div>
