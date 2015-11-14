@@ -10,7 +10,8 @@ angular.module('bootCamp', [
 	'bootCamp.blog',
 	'bootCamp.sandbox',
 	'bootCamp.profileList',
-	'bootCamp.toyproblems'
+	'bootCamp.toyproblems',
+	'bootCamp.map'
 
 ])
 
@@ -25,7 +26,10 @@ angular.module('bootCamp', [
 		.state('landingPage', {
 			url: '/landingPage',
 			templateUrl: 'landingPage/landingPage.html',
-			controller: 'LandingPageController'
+			controller: 'LandingPageController',
+			params: {
+				autoActivateChild: 'landingPage.map'
+			}
 		})
 		.state('login', {
 			url: '/login',
@@ -52,7 +56,12 @@ angular.module('bootCamp', [
 			templateUrl: 'sandbox/sandbox.html',
 			controller: 'SandboxController'
 		})
-		.state('landingPage.profileList', {
+		.state('landingPage.map', {
+			url: '/map',
+			templateUrl: 'Map/homeMap.html',
+			controller: 'MapController'
+		})
+		.state('landingPage.map.profileList', {
 			url: '/profileList',
 			templateUrl: 'landingPage/profileList/profileList.html',
 			controller: 'ProfileListController'
