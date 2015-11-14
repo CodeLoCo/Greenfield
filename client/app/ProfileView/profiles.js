@@ -16,3 +16,4 @@ var Bosa = new Profile('Bosa Omoregie','saposki','saposki@gmail.com','profilepic
 
 var Shanna = new Profile('Shanna Sullivan','acrobat130','shanna.sullivan@gmail.com','profilepics/shanna.jpeg','Full-stack software engineer. I am interested in anything health related. I specialize in MVC design.');
 
+
