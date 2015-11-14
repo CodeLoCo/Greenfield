@@ -5,6 +5,14 @@ angular.module('bootCamp.signup', [
 ])
 
 // if there are factory dependencies, add function it depends on as a function argument
-.controller('SignupController', function($scope) {
+.controller('SignupController', function($scope, $location) {
 	console.log("inside SignupController---------------");
+
+	// this function runs when user tries to log in
+	// should authenticate then redirect to userHome page
+	$scope.signUserUp = function() {
+		$location.path('/userHome');
+
+	}
+
 })
