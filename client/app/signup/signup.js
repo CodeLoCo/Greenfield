@@ -18,23 +18,24 @@ var ref = new Firebase("https://bondfire2.firebaseio.com");
 // console.log($scope.data);
   $scope.signUserUp = function() {
     $location.path('/userHome');
-console.log('this the name model', $scope.firstname);
+// console.log('this the name model', $scope.fname);
 //$scope.firstname.$save();
 var users = ref.child('users');
   users.push({
-      firstname: $scope.firstname,
-      lastname: $scope.lastname,
-      password: $scope.password
-
+      fname: $scope.fname,
+      school: $scope.school,
+      github: $scope.github,
+      email: $scope.email
   });
     // var save = Profile.set({ 
     //     firstname: $scope.firstname,
     //     lastname: $scope.lastname,
     //     password: $scope.password
     //   });
-    $scope.firstname = '';
-    $scope.lastname = '';
-    $scope.password = '';
+    $scope.fname = '';
+    $scope.school = '';
+    $github = '';
+    $scope.email = '';
 
     // if(save){
     //   alert('saved successfully');
