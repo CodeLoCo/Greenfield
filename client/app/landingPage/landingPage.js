@@ -1,5 +1,5 @@
 // module for landingPage view
-angular.module('bootCamp.landingPage', [
+angular.module('bootCamp.landingPage', [ 'firebase'
 	// add any factory dependencies here
 
 ])

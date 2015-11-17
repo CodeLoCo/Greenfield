@@ -1,22 +1,22 @@
-<form name="SignUp" ng-submit="signUserUp()">
+<form id="form" name="SignUp" ng-submit="signUserUp()">
   <fieldset class="form-group">
-    <input type="text" placeholder="firstname" title="firstname"/>
+    <input type="text" ng-model="fname" placeholder="name" title="fname"/>
   </fieldset>
   <fieldset class="form-group">
-    <input type="text" placeholder="lastname" title="lastname"/>
+    <input type="text" ng-model="school" placeholder="school" title="school"/>
   </fieldset>
-  <fieldset class="form-group">
+  <!-- <fieldset class="form-group">
     <input type="text" placeholder="username" title="username"/>
+  </fieldset> -->
+  <fieldset class="form-group">
+    <input type="text" ng-model="github" placeholder="github" title="github"/>
   </fieldset>
   <fieldset class="form-group">
-    <input type="text" placeholder="password" title="password"/>
+    <input type="text" ng-model="email" placeholder="email@email.com" title="email"/>
   </fieldset>
-  <fieldset class="form-group">
-    <input type="text" placeholder="email@email.com" title="Email"/>
-  </fieldset>
-  <fieldset class="form-group">
+  <!-- <fieldset class="form-group">
     <input type="file" name="pic" accept="image/*" />
-  </fieldset>
+  </fieldset> -->
   <fieldset class="form-group">
     <input type="submit" value="SignUp"/>
   </fieldset>
