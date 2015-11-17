@@ -15,7 +15,7 @@ var ref = new Firebase("https://bondfire2.firebaseio.com");
 
 
 $scope.getData = function() {
-  console.log('fucku');
+  console.log('hi');
   ref.on("value", function(snapshot) {
     console.log(snapshot.val());
   })
