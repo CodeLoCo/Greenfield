@@ -10,7 +10,16 @@ angular.module('bootCamp.signup', ['firebase'])
 
   // this function runs when user tries to log in
   // should authenticate then redirect to userHome page
+
 var ref = new Firebase("https://bondfire2.firebaseio.com");
+
+
+$scope.getData = function() {
+  console.log('fucku');
+  ref.on("value", function(snapshot) {
+    console.log(snapshot.val());
+  })
+}
 // $scope.data = $firebaseObject(ref);
 
 // The obj variable will appear to be empty here and won't contain any remote data,
@@ -36,7 +45,6 @@ var users = ref.child('users');
     $scope.school = '';
     $github = '';
     $scope.email = '';
-
     // if(save){
     //   alert('saved successfully');
     // } else {
