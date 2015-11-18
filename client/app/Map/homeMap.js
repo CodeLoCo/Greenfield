@@ -85,7 +85,7 @@ setTimeout(function(){ $(function(){
         'ny' : {
           latitude: 40.717079,
           longitude: -74.00116,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/NY',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -103,7 +103,7 @@ setTimeout(function(){ $(function(){
         'atl' : {
           latitude: 33.7489954,
           longitude:  -84.3879824,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/atlanta',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -141,7 +141,7 @@ setTimeout(function(){ $(function(){
         'au' : {
           latitude: 30.267153,
           longitude: -97.7430608,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/austin',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -159,7 +159,7 @@ setTimeout(function(){ $(function(){
               'la' : {
           latitude: 34.025052,
           longitude: -118.192006,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/LA',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -177,7 +177,7 @@ setTimeout(function(){ $(function(){
               'dallas' : {
           latitude: 32.784881,
           longitude: -96.808244,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/dallas',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -195,7 +195,7 @@ setTimeout(function(){ $(function(){
               'miami' : {
           latitude: 25.789125,
           longitude:  -80.205674,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/miami',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -213,7 +213,7 @@ setTimeout(function(){ $(function(){
               'chi' : {
           latitude: 41.8781136,
           longitude:  -87.6297982,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/chicago',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -230,7 +230,7 @@ setTimeout(function(){ $(function(){
         },'port' : {
           latitude: 45.5230622,
           longitude:  -122.6764816,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/portland',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -247,7 +247,7 @@ setTimeout(function(){ $(function(){
         },'indy' : {
           latitude: 39.768403,
           longitude:  -86.158068,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/indy',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
@@ -264,7 +264,7 @@ setTimeout(function(){ $(function(){
         },'bost' : {
           latitude: 42.3600825,
           longitude:  -71.0588801,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/boston',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
