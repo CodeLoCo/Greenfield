@@ -1,6 +1,4 @@
-
-
-body{
+body {
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -36,3 +34,8 @@ nav > ul > li > a {
 .logo > li > a {
     color: #aaa;
 }
+
+
+/*Toy Problem Css */
+
+
