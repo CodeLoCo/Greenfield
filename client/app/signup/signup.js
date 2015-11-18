@@ -33,7 +33,7 @@ $scope.getData = function() {
 
 $scope.signUserUp = function() {
 
-$location.path('/userHome');
+$location.path('/landingPage');
 
 var users = ref.child('users');
 users.push({
