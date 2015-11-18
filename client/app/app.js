@@ -71,5 +71,15 @@ angular.module('bootCamp', [
 			templateUrl: 'toyproblems/toyproblems.html',
 			controller: 'ToyProblemsController'
 		})
+		.state('landingPage.map.profileListSF', {
+			url: '/profileList/SF',
+			templateUrl: 'landingPage/profileList/profileListSF.html',
+			controller: 'ProfileListController'
+		})
+		.state('landingPage.map.profileListSeattle', {
+			url: '/profileList/Seattle',
+			templateUrl: 'landingPage/profileList/profileListSeattle.html',
+			controller: 'ProfileListController'
+		})
 
 });

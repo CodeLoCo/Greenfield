@@ -121,7 +121,7 @@ setTimeout(function(){ $(function(){
         'sf' : {
           latitude: 37.792032,
           longitude: -122.394613,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/SF',
           eventHandlers: {
             click:function(){
               $('.profileView').html('');
@@ -282,7 +282,7 @@ setTimeout(function(){ $(function(){
               'seattle' : {
           latitude: 47.599571,
           longitude: -122.319426,
-          href: '#/landingPage/map/profileList',
+          href: '#/landingPage/map/profileList/Seattle',
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
