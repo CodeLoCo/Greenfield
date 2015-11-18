@@ -25,9 +25,9 @@ h1 {
     max-width: 800px;
     margin:auto;
 }
-
+/*styling for images above map*/
 .myText {
-    /*background-color:#343434;*/
+    /*background-image: url("photos/BondfireLogo.png");*/
     height:100px;
     padding:10px;
     color:#fff;

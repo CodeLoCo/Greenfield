@@ -77,6 +77,10 @@ setTimeout(function(){ $(function(){
                           if (typeof elemOptions.myText != 'undefined') {
                               $('.myText span').html(elemOptions.myText).css({display:'none'}).fadeIn('slow');
                           }
+                      },
+                      mouseout: function(e, id, mapElem, textElem, elemOptions) {
+                        $('.myText span').html(elemOptions.myText).css({display:'none'}).fadeIn('slow');
+                        $('.myText span').html('<img src="Map/photos/BondfireLogo.png" alt="bonfire logo"></img>').fadeIn('slow');
                       }
                   }
               }
@@ -124,8 +128,6 @@ setTimeout(function(){ $(function(){
           href: '#/landingPage/map/profileList/SF',
           eventHandlers: {
             click:function(){
-              $('.profileView').html('');
-              event.preventDefault();
               //fetch the data and store in variable
               $scope.filteredUsers = {};
               for(var i=0;i<$scope.usersArray.length;i++){
