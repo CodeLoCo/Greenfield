@@ -13,8 +13,8 @@ var ref = new Firebase("https://bondfire2.firebaseio.com");
 $scope.getData = function() {
   ref.on("value", function(snapshot) {
     console.log(snapshot.val());
-  })
-}
+  });
+};
 
 $scope.signUserUp = function() {
   var data;
@@ -23,8 +23,8 @@ $scope.signUserUp = function() {
     url: 'https://api.github.com/users/' + $scope.github
   }).then(function(response){
     $scope.userImgUrl = response.data.avatar_url;
-    console.log(response)
-  })
+    console.log(response);
+  });
   setTimeout(function(){
 
 
@@ -52,6 +52,6 @@ users.push({
   $scope.locale = '';
   $scope.summary = '';
   // $scope.userImgUrl = '';
-  },500);
-  }
-})
+  },200);
+  };
+});

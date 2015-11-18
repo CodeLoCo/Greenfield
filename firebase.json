@@ -1,0 +1,9 @@
+{
+  "firebase": "bondfire2",
+  "public": "client/app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -3,7 +3,7 @@
 <div>
   <ul class='profileView'>
     <li  ng-repeat="user in filteredUsers">
-      <span>{{user.profilePic}}</span><br>
+      <span><img src={{user.img}} alt="image should be here"></span><br>
       <span>Name : {{user.fname}}</span><br>
       <span>School: {{user.school}}</span><br>
       <span>Github: <a href='https://github.com/{{user.github}}'>{{user.github}}</a></span><br>
