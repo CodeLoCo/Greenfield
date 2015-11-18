@@ -2,27 +2,12 @@
 angular.module('bootCamp.signup', ['firebase'])
 
 // if there are factory dependencies, add function it depends on as a function argument
-.controller('SignupController', function($scope, $location, $firebaseObject, $firebase) {
+.controller('SignupController', function($scope, $location, $firebaseObject, $firebase, $http) {
   console.log("inside SignupController---------------");
 
-var previewFile = function() {
-  var preview = document.querySelector('img');
-  var file    = document.querySelector('input[type=file]').files[0];
-  var reader  = new FileReader();
-
-  reader.onloadend = function () {
-    preview.src = reader.result;
-  }
-
-  if (file) {
-    var inHere = reader.readAsDataURL(file);
-    console.log(inHere)
-  } else {
-    preview.src = "";
-  }
-}
 
 var ref = new Firebase("https://bondfire2.firebaseio.com");
+
 
 
 $scope.getData = function() {
@@ -32,9 +17,19 @@ $scope.getData = function() {
 }
 
 $scope.signUserUp = function() {
+  var data;
+  $http({
+    method:'GET',
+    url: 'https://api.github.com/users/' + $scope.github
+  }).then(function(response){
+    $scope.userImgUrl = response.data.avatar_url;
+    console.log(response)
+  })
+  setTimeout(function(){
+
+  console.log('this is the pic url----',$scope.userImgUrl )
 
 $location.path('/userHome');
-
 var users = ref.child('users');
 users.push({
   fname: $scope.fname,
@@ -42,7 +37,8 @@ users.push({
   github: $scope.github,
   email: $scope.email,
   location: $scope.locale,
-  summary: $scope.summary
+  summary: $scope.summary,
+  img: $scope.userImgUrl
 });
 
   $scope.fname = '';
@@ -51,5 +47,7 @@ users.push({
   $scope.email = '';
   $scope.locale = '';
   $scope.summary = '';
+  // $scope.userImgUrl = '';
+  },500);
   }
 })
