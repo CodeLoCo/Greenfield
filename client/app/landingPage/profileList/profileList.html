@@ -1,13 +1,13 @@
 <h4 class='alumniList'>Alumni Near You</h4>
 
 <div>
-  <ul>
-    <li ng-repeat="user in filteredUsers">
-      <span>{{user.profilePic}}</span>
-      <span>Name : {{user.name}}</span>
-      <span>School: {{user.school}}</span>
-      <span>Github: {{user.github}}</span>
-      <span>Email: {{user.email}}</span>
+  <ul class='profileView'>
+    <li  ng-repeat="user in filteredUsers">
+      <span>{{user.profilePic}}</span><br>
+      <span>Name : {{user.fname}}</span><br>
+      <span>School: {{user.school}}</span><br>
+      <span>Github: <a href='https://github.com/{{user.github}}'>{{user.github}}</a></span><br>
+      <span>Email: <a href= 'mailto: {{user.email}}'>{{user.email}}</a></span><br>
       <span>Summary: {{user.summary}}</span>
     </li>
   </ul>
