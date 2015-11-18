@@ -302,5 +302,5 @@ setTimeout(function(){ $(function(){
       }
     });
   });
-},800) // end of setTimeout function
-})
+},1500); // end of setTimeout function
+});
