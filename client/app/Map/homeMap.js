@@ -11,27 +11,6 @@ angular.module('bootCamp.map', [
 
   var ref = new Firebase("https://bondfire2.firebaseio.com/users");
   
-    // var fireObj = $firebaseObject(ref.child('users'))
-// console.log('this is ref',ref)
-  // function() {
-  //   var deferred = $q.defer();
-  //   console.log('this is fireObj',fireObj)
-  //   ref.on("value", function(snapshot) {
-  // //     // console.log("snapshot.val()",snapshot.val());
-  // //     if (fireObj) {
-  // //       deferred.resolve(fireObj);
-  // //     } else {
-  // //       deferred.reject(/*something*/)
-  // //     }
-  // //   })
-  // //   return deferred.promise;
-  // // };
-  //   $timeout(function(){
-  //     $scope.data = snapshot.val();
-  //   })
-  // })
-  // console.log('this is ref',ref)
-  // var $scope.fetchData = '';
   $scope.getData = function(){
     ref.on('value', function(snapshot){
       $scope.fetchData = snapshot.val();
@@ -53,15 +32,15 @@ setTimeout(function(){ $(function(){
     return usersArray;
   };
 
-    var usersArray = findRef(); // this is the array of our users
-    console.log(usersArray)
+    $scope.usersArray = findRef(); // this is the array of our users
+    console.log('this is scope.usersarray', $scope.usersArray)
 
     var testimonials = ["<b>'We recently hired a bootcamp grad at SolarCity, best decision we've ever made'</b> - Ilan Musk (CEO Tesla)","<b>'Since 2013, we've constantly recruited bootcamp alum. They create a hardworking atmosphere that makes me love coming to work everyday'</b> - Mark Zuckerberg (CEO Facebook)", "<b>'I met 2 of the most intelligent people I've ever known while at Telegraph Academy...3 months later we have a million-dollar business'</b> - Eric Eng(CEO bullcrap.com)","<b>'My first job was at a company that had already hired alumni of another school, afterwards I was told they put in a good word'</b> - Bosa Saposki (Software Engineer Twitter)"];
 
 
     var alpha = ['a','b','c','d'];
 
-    var fetchedData = $scope.fetchData;
+    // var fetchedData = $scope.fetchData;
     // console.log('this is fetchedData.$$state',fetchedData.$$state);
     var getGradCount = function(location){
       //create a counter
@@ -69,8 +48,8 @@ setTimeout(function(){ $(function(){
       //fetch user data -- call function
       //for each user
       // update this based on format of json object
-      for(var user in fetchedData ){
-        if(fetchedData[user].firstname === 'bosa'){
+      for(var i = 0; i < $scope.usersArray.length; i++ ){
+        if($scope.usersArray[i].location === location){
         //if location from get request is the same as location passed in
           counter++
           //increment the count
@@ -114,14 +93,14 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'New York'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i = 0; i < $scope.usersArray.length; i++){
+                if($scope.usersArray[i].location === 'New York'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i];
                 }
               }
             }
           },
-          tooltip: {content : "New York : 32 Boot Camps, " + getGradCount('bosa') + " registered grads"},
+          tooltip: {content : "New York : 32 Boot Camps, " + getGradCount('New York') + " registered grads"},
                   myText: "<img src='Map/photos/newyork/ga.png'><img src ='Map/photos/newyork/byteacademy.png'><img src ='Map/photos/newyork/dsl.jpg'><img src ='Map/photos/newyork/flatironschool.png'><img src ='Map/photos/newyork/fullstack.png'><img src ='Map/photos/newyork/makeschool.png'>"
         },
         'atl' : {
@@ -132,9 +111,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'New York'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='New York'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -150,9 +129,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'San Francisco'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='San Francisco'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -168,9 +147,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Austin'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Austin'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -186,9 +165,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Los Angeles'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Los Angeles'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -204,9 +183,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Dallas'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Dallas'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -222,9 +201,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Miami'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Miami'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -240,9 +219,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Chicago'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Chicago'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -257,9 +236,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Portland'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Portland'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -274,9 +253,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'New York'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='New York'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -291,9 +270,9 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Boston'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i=0;i<$scope.usersArray.length;i++){
+                if($scope.usersArray[i].location ==='Boston'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i]
                 }
               }
             }
@@ -309,9 +288,10 @@ setTimeout(function(){ $(function(){
             click:function(){
               //fetch the data and store in variable
               $scope.filteredUsers = {};
-              for(var keys in fetchedData){
-                if(fetchedData.user.location === 'Seattle'){
-                  $scope.filteredUsers[keys] = fetchedData[keys]
+              for(var i = 0; i < $scope.usersArray.length; i++){
+                console.log("$scope.filteredUsers", $scope.filteredUsers)
+                if($scope.usersArray[i].location === 'Seattle'){
+                  $scope.filteredUsers[i] = $scope.usersArray[i];
                 }
               }
             }
