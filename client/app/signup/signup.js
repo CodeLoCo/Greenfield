@@ -27,7 +27,11 @@ $scope.signUserUp = function() {
   })
   setTimeout(function(){
 
+
   console.log('this is the pic url----',$scope.userImgUrl )
+
+$location.path('/landingPage');
+
 
 $location.path('/userHome');
 var users = ref.child('users');
