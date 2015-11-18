@@ -1,1 +1,14 @@
-<div>profileList!</div>
+<h4 class='alumniList'>Alumni Near You</h4>
+
+<div>
+  <ul>
+    <li ng-repeat="user in filteredUsers">
+      <span>{{user.profilePic}}</span>
+      <span>Name : {{user.name}}</span>
+      <span>School: {{user.school}}</span>
+      <span>Github: {{user.github}}</span>
+      <span>Email: {{user.email}}</span>
+      <span>Summary: {{user.summary}}</span>
+    </li>
+  </ul>
+</div>

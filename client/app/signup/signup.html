@@ -1,29 +1,43 @@
-<form id="form" name="SignUp" ng-submit="signUserUp()">
-  <fieldset class="form-group">
-    <input type="text" ng-model="fname" placeholder="name" title="fname"/>
+<form name="SignUp" ng-submit="signUserUp()">
+
+  <fieldset class="form-group" >
+    <input type="text" placeholder="name" title="name" ng-model="formData.name"/>
   </fieldset>
-  <fieldset class="form-group">
-    <input type="text" ng-model="school" placeholder="school" title="school"/>
+  
+  <fieldset class="form-group" >
+    <input type="text" placeholder="email@email.com" title="Email" ng-model="formData.email"/>
   </fieldset>
-  <!-- <fieldset class="form-group">
-    <input type="text" placeholder="username" title="username"/>
-  </fieldset> -->
-  <fieldset class="form-group">
-    <input type="text" ng-model="github" placeholder="github" title="github"/>
+
+<fieldset class="form-group" >
+    <input type="text" placeholder="school" title="name" ng-model="formData.school"/>
   </fieldset>
+
+<!-- dropdown location menu -->
+
+<select ng-model="formData.userLocation">
+<!-- <span>Choose Location</span> -->
+  <option value="" selected> Choose Location</option>
+  <option value='Seattle'>Seattle</option>
+  <option value='Portland'>Portland</option>
+  <option value='San Francisco'>San Francisco</option>
+  <option value='Los Angeles'>Los Angeles</option>
+  <option value='Austin'>Austin</option>
+  <option value='Dallas'>Dallas</option>
+  <option value='Miami'>Miami</option>
+  <option value='Atlanta'>Atlanta</option>
+  <option value='Chicago'>Chicago</option>
+  <option value='Indianapolis'>Indianapolis</option>
+  <option value='New York'>New York</option>
+  <option value='Boston'>Boston</option>
+</select>
+
   <fieldset class="form-group">
-    <input type="text" ng-model="email" placeholder="email@email.com" title="email"/>
-  </fieldset>
-  <!-- <fieldset class="form-group">
     <input type="file" name="pic" accept="image/*" />
-  </fieldset> -->
+  </fieldset>
   <fieldset class="form-group">
     <input type="submit" value="SignUp"/>
   </fieldset>
 </form>
-<button ng-Click="getData()">Get data</button>
-
-
 
 
 
