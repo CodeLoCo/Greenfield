@@ -43,8 +43,8 @@ angular.module('bootCamp', [
 		})
 		.state('userHome', {
 			url: '/userHome',
-			templateUrl: 'userHome/userHome.html',
-			controller: 'UserHomeController'
+			templateUrl: 'map/homeMap.html',
+			controller: 'MapController'
 		})
 		.state('blog', {
 			url: '/blog',
@@ -71,4 +71,5 @@ angular.module('bootCamp', [
 			templateUrl: 'toyproblems/toyproblems.html',
 			controller: 'ToyProblemsController'
 		})
+
 });

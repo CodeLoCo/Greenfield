@@ -10,7 +10,7 @@ angular.module('bootCamp.map', [
   console.log("inside MapController---------------");
 
   var ref = new Firebase("https://bondfire2.firebaseio.com/users");
-  
+
   $scope.getData = function(){
     ref.on('value', function(snapshot){
       $scope.fetchData = snapshot.val();
@@ -302,5 +302,5 @@ setTimeout(function(){ $(function(){
       }
     });
   });
-},500) // end of setTimeout function
+},800) // end of setTimeout function
 })
