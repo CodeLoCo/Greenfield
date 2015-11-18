@@ -36,20 +36,35 @@
         <link href="Map/homeMap.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <!-- fixed navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
+            <ul class="container-fluid">
+                <ul class="navbar-header">
                     <!-- <li><a ui-sref="login">Login</a></li> -->
                     <a class="navbar-brand" ui-sref="signup">MapMe</a>
                     <a class="navbar-brand" ui-sref="blog">Blog</a>
                     <a class="navbar-brand" ui-sref="toyproblems">Toy Problem</a>
-                    <a class="navbar-brand" ui-sref="landingPage"class="logo"> BONDFIRE </a>
-                </div>
-            </div>
+
+                </ul>
+                <ul class="navbar-right">
+                    <a class="navbar-brand" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogo.png" alt="bonfire logo"></img></a>
+                </ul>
+            </ul>
         </nav>
         <div >
         <div ui-view>
         </div>
+        <!-- fixed footer -->
+        <footer class="footer navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- <li><a ui-sref="login">Login</a></li> -->
+
+                    <a class="navbar-brand" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogo.png" alt="bonfire logo"></img></a>
+                </div>
+            </div>
+        </footer>
+
     </body>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="userHome/userHome.js"></script>

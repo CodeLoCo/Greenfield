@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 14px;
+    margin-bottom: 50px;
 }
 
 nav {
@@ -35,4 +36,16 @@ nav > ul > li > a {
 }
 .logo > li > a {
     color: #aaa;
+}
+
+.bondfireLogo {
+    max-height: 50px;
+}
+
+.navbar-right .navbar-brand {
+    padding: 0;
+}
+
+.footer .navbar-brand {
+    padding: 0;
 }
