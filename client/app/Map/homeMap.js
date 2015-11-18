@@ -37,9 +37,6 @@ setTimeout(function(){ $(function(){
 
     var testimonials = ["<b>'We recently hired a bootcamp grad at SolarCity, best decision we've ever made'</b> - Ilan Musk (CEO Tesla)","<b>'Since 2013, we've constantly recruited bootcamp alum. They create a hardworking atmosphere that makes me love coming to work everyday'</b> - Mark Zuckerberg (CEO Facebook)", "<b>'I met 2 of the most intelligent people I've ever known while at Telegraph Academy...3 months later we have a million-dollar business'</b> - Eric Eng(CEO bullcrap.com)","<b>'My first job was at a company that had already hired alumni of another school, afterwards I was told they put in a good word'</b> - Bosa Saposki (Software Engineer Twitter)"];
 
-
-    var alpha = ['a','b','c','d'];
-
     // var fetchedData = $scope.fetchData;
     // console.log('this is fetchedData.$$state',fetchedData.$$state);
     var getGradCount = function(location){
@@ -127,6 +124,8 @@ setTimeout(function(){ $(function(){
           href: '#/landingPage/map/profileList',
           eventHandlers: {
             click:function(){
+              $('.profileView').html('');
+              event.preventDefault();
               //fetch the data and store in variable
               $scope.filteredUsers = {};
               for(var i=0;i<$scope.usersArray.length;i++){
@@ -287,6 +286,7 @@ setTimeout(function(){ $(function(){
           eventHandlers: {
             click:function(){
               //fetch the data and store in variable
+              event.preventDefault();
               $scope.filteredUsers = {};
               for(var i = 0; i < $scope.usersArray.length; i++){
                 console.log("$scope.filteredUsers", $scope.filteredUsers)
