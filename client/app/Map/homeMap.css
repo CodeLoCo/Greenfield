@@ -28,11 +28,12 @@ h1 {
 /*styling for images above map*/
 .myText {
     /*background-image: url("photos/BondfireLogo.png");*/
-    height:100px;
+    height:120px;
     padding:10px;
+    padding-top: 50px;
     color:#fff;
-    overflow:auto;
-    margin:10px;
+    /*overflow:auto;*/
+    margin:35px;
     text-align: center;
 }
 .mapload {

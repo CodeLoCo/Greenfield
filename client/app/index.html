@@ -4,8 +4,8 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>CodeLoco</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
+
+
 
 
         <!-- Angular -->
@@ -23,25 +23,57 @@
           <!-- Mapael jQuery -->
         <script src="Map/packages/jquery.mapael.js" charset="utf-8" ></script>
 
-        
+
           <!-- Maps -->
         <script src="Map/packages/usa_states.js" charset="utf-8" ></script>
         <script src="Map/homeMap.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link href="Map/homeMap.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
-        <nav>
-            <ul>
-                <!-- <li><a ui-sref="login">Login</a></li> -->
-                <li><a ui-sref="signup">MapMe</a></li>
-                <li><a ui-sref="blog">Blog</a></li>
-                <li><a ui-sref="toyproblems">Toy Problem</a></li>
-                <li><a ui-sref="landingPage"class="logo"> BONDFIRE </a></li>
+    <body class="container-fluid">
+        <!-- fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <ul class="container-fluid">
+                <ul class="navbar-header">
+                    <!-- <li><a ui-sref="login">Login</a></li> -->
+                    <a class="navbar-brand" ui-sref="signup">MapMe</a>
+                    <a class="navbar-brand" ui-sref="blog">Blog</a>
+                    <a class="navbar-brand" ui-sref="toyproblems">Toy Problem</a>
+
+                </ul>
+                <ul class="navbar-right">
+                    <a class="navbar-brand" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogoWhite.png" alt="bonfire logo"></img></a>
+                </ul>
             </ul>
         </nav>
         <div >
         <div ui-view>
         </div>
+        <!-- fixed footer -->
+        <footer class="footer navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <ul>
+                    <!-- <li><a ui-sref="login">Login</a></li> -->
+
+                    <div>
+                        <a class="navbar-brand bondfireLogo" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogoWhite.png" alt="bonfire logo"></img></a>
+                    </div>
+                    <div class="navbar-brand footerText">
+                        <p class="footerText">Made by CodeLoco. Check us out on <a href="https://github.com/CodeLoCo">Github</a>.</p></div>
+                </ul>
+            </div>
+        </footer>
+
     </body>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="userHome/userHome.js"></script>

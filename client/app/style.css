@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
+    margin-bottom: 50px;
 }
 
 nav {
@@ -34,6 +35,49 @@ nav > ul > li > a {
 .logo > li > a {
     color: #aaa;
 }
+
+
+.bondfireLogo {
+    max-height: 50px;
+}
+
+.navbar-right .navbar-brand {
+    padding: 0;
+}
+
+.footer .bondfireLogo{
+    padding: 0;
+}
+
+.footerText {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* signup page custom css */
+
+.formTitle {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#location {
+    cursor: pointer;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+
+/*.navbar-inverse {
+    width: 100%;
+    text-align: center;
+    > div {
+      float: none;
+      display: inline-block;
+    }
+}*/
 
 
 /*Toy Problem Css */
@@ -149,6 +193,7 @@ textarea {
 img {
   max-width: 100%;
 }
+
 
 
 

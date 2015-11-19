@@ -1,46 +1,70 @@
-<form id="form" name="SignUp" ng-submit="signUserUp()">
-  <fieldset class="form-group">
-    <input type="text" ng-model="fname" placeholder="Please enter your full Name" title="fname" required>
-  </fieldset>
-  <fieldset class="form-group">
-    <input type="text" ng-model="school" placeholder="What Bootcamp did you attend?" title="school" required>
-  </fieldset>
-  <!-- <fieldset class="form-group">
-    <input type="text" placeholder="username" title="username"/>
-  </fieldset> -->
-  <fieldset class="form-group">
-    <input type="text" ng-model="github" placeholder="Enter Github handle" title="github" required>
-  </fieldset>
-  <fieldset class="form-group">
-    <input type="text" ng-model="email" placeholder="Enter E-mail Address" title="email" required> 
-  </fieldset>
-  <fieldset>
-    <select ng-model="locale">
-      <option value="" selected> Choose Location</option>
-      <option value='Seattle'>Seattle</option>
-      <option value='Portland'>Portland</option>
-      <option value='San Francisco'>San Francisco</option>
-      <option value='Los Angeles'>Los Angeles</option>
-      <option value='Austin'>Austin</option>
-      <option value='Dallas'>Dallas</option>
-      <option value='Miami'>Miami</option>
-      <option value='Atlanta'>Atlanta</option>
-      <option value='Chicago'>Chicago</option>
-      <option value='Indianapolis'>Indianapolis</option>
-      <option value='New York'>New York</option>
-      <option value='Boston'>Boston</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <input type="text" ng-model="summary" placeholder="Tell us a little about yourself" title="summary" required>
-  </fieldset>
 
-  <fieldset class="form-group">
-    <input type="submit" value="SignUp"/>
-  </fieldset>
+<div class="container-fluid">
 
-  <span class="error" ng-show="form.input.$error.required">Required!</span><br>
-</form>
+  <div class="formTitle">
+    <h3>Share your information to connect with fellow bootcampers.</h3>
+  </div>
 
+  <form id="form" name="SignUp" ng-submit="signUserUp()" class="col-xs-6">
+
+    <!-- name -->
+    <fieldset class="form-group">
+      <label for="fname">Name</label>
+      <input type="text" ng-model="fname" placeholder="name" title="fname" class="form-control" id="fname" required>
+    </fieldset>
+
+    <!-- school -->
+    <fieldset class="form-group">
+      <label for="school">School</label>
+      <input type="text" ng-model="school" placeholder="school" title="school" class="form-control" id="school" required>
+    </fieldset>
+
+    <!-- <fieldset class="form-group">
+      <input type="text" placeholder="username" title="username"/>
+    </fieldset> -->
+
+    <!-- github -->
+    <fieldset class="form-group">
+      <label for="github">Github</label>
+      <input type="text" ng-model="github" placeholder="github" title="github" class="form-control" id="github" required>
+    </fieldset>
+
+    <!-- email -->
+    <fieldset class="form-group">
+      <label for="email">Email</label>
+      <input type="text" ng-model="email" placeholder="email@email.com" title="email" class="form-control" id="email" required>
+    </fieldset>
+
+    <!-- location -->
+    <fieldset class="form-group location">
+      <label for="location">Location</label>
+      <select  class="form-control" id="location" ng-model="locale">
+        <option value="" selected> Choose Location</option>
+        <option value='Seattle'>Seattle</option>
+        <option value='Portland'>Portland</option>
+        <option value='San Francisco'>San Francisco</option>
+        <option value='Los Angeles'>Los Angeles</option>
+        <option value='Austin'>Austin</option>
+        <option value='Dallas'>Dallas</option>
+        <option value='Miami'>Miami</option>
+        <option value='Atlanta'>Atlanta</option>
+        <option value='Chicago'>Chicago</option>
+        <option value='Indianapolis'>Indianapolis</option>
+        <option value='New York'>New York</option>
+        <option value='Boston'>Boston</option>
+      </select>
+    </fieldset>
+
+    <!-- summary -->
+    <fieldset class="form-group">
+      <label for="summary">Professional Summary</label>
+      <textarea type="text" ng-model="summary" placeholder="summary" title="summary" class="form-control" rows="3" id="summary" required>
+    </textarea>
+
+    <button type="submit" class="btn btn-default">Add me to the map!</button>
+
+    <span class="error" ng-show="form.input.$error.required">Required!</span><br>
+  </form>
+</div>
 
 
