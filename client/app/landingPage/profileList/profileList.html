@@ -2,13 +2,17 @@
 
 <div>
   <ul class='profileView'>
+
     <li  ng-repeat="user in filteredUsers" class="profileListItem">
-      <span><img src={{user.img}} alt="image should be here"></span>
-      <span><strong>Name :</strong> {{user.fname}}</span><br>
-      <span><strong>School:</strong> {{user.school}}</span><br>
-      <span><strong>Github:</strong> <a href='https://github.com/{{user.github}}'>{{user.github}}</a></span><br>
-      <span><strong>Email:</strong> <a href= 'mailto: {{user.email}}'>{{user.email}}</a></span><br>
-      <span><strong>Summary:</strong> {{user.summary}}</span>
+      <span><img src={{user.img}} alt="image should be here"></span><br>
+      <span> {{user.fname}}</span><br>
+      <span><i class="fa fa-graduation-cap fa-2x"></i>{{user.school}}</span><br>
+      <span><i class="fa fa-github-square fa-2x"></i> <a href='https://github.com/{{user.github}}'>{{user.github}}</a></span><br>
+      <span><i class="fa fa-envelope fa-2x"></i> <a href= 'mailto: {{user.email}}'>{{user.email}}</a></span><br>
+      <span><i class="fa fa-commenting fa-2x"></i>{{user.summary}}</span>
     </li>
   </ul>
 </div>
+
+
+<!-- "btn btn-social-icon btn-twitter" -->
