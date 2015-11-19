@@ -25,7 +25,9 @@ $scope.signUserUp = function() {
     $scope.userImgUrl = response.data.avatar_url;
     console.log(response);
   });
+
  $location.path('/landingPage');
+
 // $location.path('/userHome');
   setTimeout(function(){
 
