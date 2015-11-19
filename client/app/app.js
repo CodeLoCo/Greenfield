@@ -43,7 +43,7 @@ angular.module('bootCamp', [
 		})
 		.state('userHome', {
 			url: '/userHome',
-			templateUrl: 'map/homeMap.html',
+			templateUrl: 'Map/homeMap.html',
 			controller: 'MapController'
 		})
 		.state('blog', {
