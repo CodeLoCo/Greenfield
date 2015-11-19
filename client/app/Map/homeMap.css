@@ -37,8 +37,10 @@ h1 {
     text-align: center;
 }
 .mapload {
-	margin:auto;
-	text-align: center;
+	display:block;
+   	width:100px;
+   	height: 100%;
+   	margin: 0 auto;
 	color:#0991BD;
 	font-size:20px;
 

@@ -25,15 +25,15 @@ $scope.signUserUp = function() {
     $scope.userImgUrl = response.data.avatar_url;
     console.log(response);
   });
+  $location.path('/landingPage');
+// $location.path('/userHome');
   setTimeout(function(){
 
 
   console.log('this is the pic url----',$scope.userImgUrl )
 
-$location.path('/landingPage');
 
 
-$location.path('/userHome');
 var users = ref.child('users');
 users.push({
   fname: $scope.fname,
@@ -52,6 +52,6 @@ users.push({
   $scope.locale = '';
   $scope.summary = '';
   // $scope.userImgUrl = '';
-  },200);
+  },500);
   };
 });
