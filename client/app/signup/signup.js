@@ -25,8 +25,8 @@ $scope.signUserUp = function() {
     $scope.userImgUrl = response.data.avatar_url;
     console.log(response);
   });
- // $location.path('/landingPage');
-$location.path('/userHome');
+ $location.path('/landingPage');
+// $location.path('/userHome');
   setTimeout(function(){
 
 
@@ -52,6 +52,6 @@ users.push({
   $scope.locale = '';
   $scope.summary = '';
   // $scope.userImgUrl = '';
-  },200);
+  },500);
   };
 });
