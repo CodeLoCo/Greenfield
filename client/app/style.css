@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 nav {
@@ -47,11 +47,14 @@ nav > ul > li > a {
 
 .footer .bondfireLogo{
     padding: 0;
+    margin-top: 5px;
 }
 
 .footerText {
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
+    float: right;
 }
 
 /* signup page custom css */
