@@ -35,7 +35,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="Map/homeMap.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
+    <body class="container-fluid">
         <!-- fixed navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <ul class="container-fluid">
@@ -47,7 +47,7 @@
 
                 </ul>
                 <ul class="navbar-right">
-                    <a class="navbar-brand" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogo.png" alt="bonfire logo"></img></a>
+                    <a class="navbar-brand" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogoWhite.png" alt="bonfire logo"></img></a>
                 </ul>
             </ul>
         </nav>
@@ -57,11 +57,15 @@
         <!-- fixed footer -->
         <footer class="footer navbar-inverse navbar-fixed-bottom">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <ul>
                     <!-- <li><a ui-sref="login">Login</a></li> -->
 
-                    <a class="navbar-brand" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogo.png" alt="bonfire logo"></img></a>
-                </div>
+                    <div>
+                        <a class="navbar-brand bondfireLogo" ui-sref="landingPage"class="logo"><img class="bondfireLogo" src="Map/photos/BondfireLogoWhite.png" alt="bonfire logo"></img></a>
+                    </div>
+                    <div class="navbar-brand footerText">
+                        <p class="footerText">Made by CodeLoco. Check us out on <a href="https://github.com/CodeLoCo">Github</a>.</p></div>
+                </ul>
             </div>
         </footer>
 

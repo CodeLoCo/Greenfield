@@ -46,6 +46,36 @@ nav > ul > li > a {
     padding: 0;
 }
 
-.footer .navbar-brand {
+.footer .bondfireLogo{
     padding: 0;
 }
+
+.footerText {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* signup page custom css */
+
+.formTitle {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#location {
+    cursor: pointer;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+
+/*.navbar-inverse {
+    width: 100%;
+    text-align: center;
+    > div {
+      float: none;
+      display: inline-block;
+    }
+}*/
