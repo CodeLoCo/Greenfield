@@ -197,8 +197,27 @@ img {
   max-width: 100%;
 }
 
+/* profile list view css*/
 
+.profileView li {
+  list-style: none;
+}
 
+.alumniList {
+  margin: 30px;
+}
 
+.profileView img {
+  max-height: 100px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  /*border-color: rgb(41, 101, 217);*/
+  border-radius: 30px;
+}
 
-
+.profileListItem {
+  margin: 20px;
+}
