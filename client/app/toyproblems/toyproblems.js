@@ -3,5 +3,6 @@
 angular.module('bootCamp.toyproblems', [])
 
 .controller('ToyProblemsController', function($scope) {
+  console.log('------------ toyproblemController')
   
 });

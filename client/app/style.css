@@ -1,6 +1,4 @@
-
-
-body{
+body {
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -36,3 +34,123 @@ nav > ul > li > a {
 .logo > li > a {
     color: #aaa;
 }
+
+
+/*Toy Problem Css */
+
+
+
+
+/*Blog View*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+/*html {
+  font-size: 18px;
+}*/
+/*.topbar {
+  background: #79b9d2;
+  color: white;
+  width: 100%;
+  z-index: 9999;
+  padding: 5px 20px;
+}
+.topbar h1 {
+  cursor: pointer;
+}
+.topbar nav {
+  margin-top: 25px;
+}
+.topbar nav ul {
+  padding: 0;
+  margin: 0;
+}
+.topbar nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.topbar nav ul li a {
+  color: white;
+  text-decoration: none;
+}*/
+ul.post-grid {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.post-grid li {
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: background linear 0.5s;
+          transition: background linear 0.5s;
+  border-bottom: 1px solid #3a8bab;
+}
+ul.post-grid li:hover {
+  background: #3a8bab;
+  color: white;
+}
+ul.post-grid li:hover h3 {
+  color: white;
+}
+.content {
+  width: 100%;
+  position: relative;
+  padding: 20px 40px 20px;
+}
+h2,
+h3 {
+  color: #3a8bab;
+}
+.post {
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 1;
+  padding-bottom: 30px;
+}
+.post cite {
+  display: inline-block;
+  padding: 10px 0;
+}
+.comments ul {
+  margin: 0;
+  padding: 0;
+}
+.comments ul li {
+  list-style-type: none;
+  padding: 20px 5px;
+  border-bottom: 1px #79b9d2 solid;
+}
+.post.ng-hide {
+  opacity: 0;
+}
+.post.ng-hide-add,
+.post.ng-hide-remove {
+  display: block!important;
+}
+form {
+  width: 100%;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+}
+.ng-invalid.ng-dirty {
+  border-color: red;
+}
+.ng-valid.ng-dirty {
+  border-color: green;
+}
+img {
+  max-width: 100%;
+}
+
+
+
+
+
