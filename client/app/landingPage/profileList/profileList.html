@@ -1,8 +1,9 @@
-<h4 class='alumniList'>Alumni Near You</h4>
+<h4 class='alumniList'><strong>Alumni Near You:</strong></h4>
 
 <div>
   <ul class='profileView'>
-    <li  ng-repeat="user in filteredUsers">
+
+    <li  ng-repeat="user in filteredUsers" class="profileListItem">
       <span><img src={{user.img}} alt="image should be here"></span><br>
       <span> {{user.fname}}</span><br>
       <span><i class="fa fa-graduation-cap fa-2x"></i>{{user.school}}</span><br>
