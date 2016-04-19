@@ -28,7 +28,8 @@ AngularJS | jQuery | Firebase | Github API
 
 ## Usage
 
-> To view this app, navigate to [BondFire's website](https://bondfire2.firebaseapp.com)
+> To view this app, navigate to [BondFire's website](https://bondfire2.firebaseapp.com).
+
 > To view this repository on your local machine,
   1. Fork and clone this repository.
   2. In your terminal, navigate to the `client` directory and type `bower install` to install bower dependencies. If bower is not already installed, type `sudo npm install -g bower` then `bower install`.
