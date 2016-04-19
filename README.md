@@ -2,9 +2,9 @@
 BondFire is an online social network that connects graduates of software engineering immersive programs with fellow graduates and recruiters.
 
 ##Technology Stack
-![AngularJS](readmeImages/)| ![Express.js](readmeImages/) | ![jQuery](readmeImages/) | ![firebase](readmeImages/) | ![githubApi](readmeImages/)
------------- | ------------- | ------------- | ------------- | -------------
-AngularJS | Express.js | jQuery | Firebase | Github API
+![AngularJS](readmeImages/angular.png)| ![jQuery](readmeImages/jquery.png) | ![firebase](readmeImages/firebase.png) | ![githubApi](readmeImages/githubapi.png)
+------------ | ------------- | ------------- | ------------- 
+AngularJS | jQuery | Firebase | Github API
 
 ## Team
 
@@ -13,7 +13,8 @@ AngularJS | Express.js | jQuery | Firebase | Github API
   - __Development Team Members__: Kristina McElveen, Darryl Nunn, Bosa Omoregie, Shanna Sullivan
   
 ## Application Overview
-[screenshots](readmeImages/)
+![screenshots](readmeImages/screen1.png)
+![screenshots2](readmeImages/screen2.png)
 
 ## Table of Contents
 
